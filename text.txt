@@ -1,0 +1,54 @@
+To initialize the repo in git 
+$ git init
+
+------------------------------------------------------------------------------------------------------
+
+To add all files 
+$ git add . 
+
+------------------------------------------------------------------------------------------------------
+
+To add one file "here 'hey' is file name" 
+$ git add "hey"
+
+------------------------------------------------------------------------------------------------------
+
+To Clone the code from github 
+$ git clone "link https://github.com of repository"
+
+------------------------------------------------------------------------------------------------------
+
+To push the code in github repository
+$ git push
+
+------------------------------------------------------------------------------------------------------
+
+To pull the code in github repository
+$ git pull 
+
+------------------------------------------------------------------------------------------------------
+
+To Commit the code in github repository
+$ git commit -m "any relevant commit message"
+
+------------------------------------------------------------------------------------------------------
+
+To Commit the code and automatically add the code in current working directory github repository
+$ git commit -am "any relevant commit message"
+
+------------------------------------------------------------------------------------------------------
+
+TO add files to last commit (works only for early push repositories)
+$ git commit --amend --no-edit  
+
+------------------------------------------------------------------------------------------------------
+
+To change the message of last commit 
+$ git commit --amend -m "nice!"  
+
+------------------------------------------------------------------------------------------------------
+
+his will delete your previous commit(s) and push your current one.
+$ git push origin master --force
+
+
