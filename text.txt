@@ -39,7 +39,7 @@ $ git commit -am "any relevant commit message"
 ------------------------------------------------------------------------------------------------------
 
 TO add files to last commit (works only for early push repositories)
-$ git commit --amend --no-edit  
+$ git commit --amend --no-edit  (when you do not wantto change commit mssg then use (--no-edit))
 
 ------------------------------------------------------------------------------------------------------
 
@@ -48,7 +48,50 @@ $ git commit --amend -m "nice!"
 
 ------------------------------------------------------------------------------------------------------
 
-his will delete your previous commit(s) and push your current one.
+This will delete your previous commit(s) and push your current one.
 $ git push origin master --force
 
+------------------------------------------------------------------------------------------------------
 
+Undo the commit with new commit (when you fill like it's garbage commit then use it)
+$ git revert better-days
+$ git log --oneline - to show updated commit
+
+------------------------------------------------------------------------------------------------------
+
+when you have repo but didn't have access to the repo local machine then
+=> open repository and click . button then it will set up in the vs code  
+
+------------------------------------------------------------------------------------------------------
+
+git history
+$ git log
+
+------------------------------------------------------------------------------------------------------
+
+git history in readable format
+$ git log --graph --oneline --decorate
+
+------------------------------------------------------------------------------------------------------
+
+Bisect 
+
+$ git bisect start
+$ git bisect bad
+$ git bisect good 6d010fd
+
+------------------------------------------------------------------------------------------------------
+
+SQUASH - when you have differ branch and many commits so we can make them 1 single commit 
+
+pick 324543d feature complete
+
+squash b23h2h9
+squash nv12309
+squash 454jfn2
+
+------------------------------------------------------------------------------------------------------
+
+Hooks
+
+ 
